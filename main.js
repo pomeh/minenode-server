@@ -1,5 +1,22 @@
 // service to detect if an host in online
 // http://www.downforeveryoneorjustme.com/doc.jquery.com
+// shell function to use that service
+/*
+is_down() {
+
+if wget -q -O - http://www.downforeveryoneorjustme.com/$1 | grep "looks down from here" > /dev/null
+then
+  return 1
+else
+  return 0
+fi
+
+}
+
+# call it as:
+# is_down example.com
+*/
+
 
 var
 	fs = require('fs'),
